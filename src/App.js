@@ -1,24 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import Nav from './Components/Nav';
+import SearchResContainer from './Components/SearchResults/SearchResContainer';
+import SideMenu from './Components/SideMenu';
+import OpenCard from './Components/SearchResults/Pages/OpenCard';
+import {BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import {Link }from 'react-router-dom';
+import React, {useState} from 'react'
 
 function App() {
   return (
+    <Router>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <SideMenu/>
+      <main>
+        <Nav/>
+        <Switch> 
+          <Route path = "/" exact component = {SearchResContainer} />
+          {/* <SearchResContainer/> */}
+          <Route path = "/opencard" component = {OpenCard} />
+        </Switch>
+      </main>  
     </div>
+
+    </Router>
   );
 }
 

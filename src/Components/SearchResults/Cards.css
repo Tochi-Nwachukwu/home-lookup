@@ -1,0 +1,302 @@
+.card__item {
+  width: 895px;
+  height: 288px;
+  background-color: #18121a;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0px;
+}
+
+.card__wrapper {
+  display: flex;
+  width: 95%;
+  height: 95%;
+  margin: 10px;
+  align-items: center;
+  position: relative;
+}
+
+.card__image {
+  width: 338px;
+  height: 248px;
+  background-image: url(./images/house.png);
+  background-size: cover;
+  border-radius: 15px;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.card__image:hover {
+  background: url(./images/house.png) rgba(82, 6, 50, 0.486);
+  background-blend-mode: multiply;
+  transform: scale(1.01);
+}
+.card__details {
+  margin: 10px;
+  padding-left: 30px;
+}
+
+.card__details-title {
+  color: var(--text-white);
+  font-size: 20px;
+  font-weight: 700;
+  margin: 10px 0px;
+}
+
+.card__details-price {
+  color: var(--text-white);
+  margin: 10px 0px;
+  font-size: 23px;
+  font-weight: 900;
+}
+
+.card__details-rooms {
+  display: flex;
+  color: var(--text-white);
+  font-size: 16px;
+  margin: 10px 0px;
+}
+
+.card__details-rooms span.img-bed {
+  height: 24px;
+  width: 24px;
+  background-image: url(./images/Bed.png);
+  background-size: contain;
+  margin-right: 4px;
+  margin-top: 4px;
+}
+.card__details-rooms span.img-couch {
+  height: 24px;
+  width: 24px;
+  background-image: url(./images/COUCH.png);
+  background-size: contain;
+  margin: 4px;
+}
+
+.card__details-rooms span.number {
+  margin: 4px;
+}
+
+.card__details--location {
+  color: var(--text-white);
+  display: flex;
+  font-size: 14px;
+}
+
+.card__details--location-img {
+  height: 24px;
+  width: 24px;
+  background-image: url(./images/Underground\ 1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 4px;
+}
+
+.card__details--movein-date {
+  color: var(--text-white);
+  font-size: 14px;
+  margin: 16px 4px;
+}
+
+.card__image--imagenav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 76px;
+  height: 44px;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__image--imagenav-icon {
+  background-image: url(./images/Photos.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+}
+
+.card__image--imagenav-text {
+  font-size: 14px;
+}
+
+.card__details--email {
+  height: 64px;
+  width: 64px;
+  background-image: url(./images/Frame\ 730.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1024px) {
+  .card__item {
+    width: 668px;
+    height: 188px;
+    background-color: #18121a;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0px;
+  }
+
+  .card__wrapper {
+    display: flex;
+    width: 95%;
+    height: 95%;
+    margin: 10px;
+    align-items: center;
+    position: relative;
+  }
+
+  .card__image {
+    width: 238px;
+    height: 148px;
+    background-image: url(./images/house.png);
+    background-size: cover;
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .card__details {
+    margin: 10px;
+    padding-left: 15px;
+  }
+}
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+  .card__item {
+    width: 100%;
+    height: 100%;
+    background-color: #18121a;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0px;
+  }
+
+  .card__wrapper {
+    display: flex;
+    width: 95%;
+    height: 95%;
+    margin: 10px;
+    align-items: center;
+    position: relative;
+  }
+
+  .card__image {
+    width: 238px;
+    height: 148px;
+    background-image: url(./images/house.png);
+    background-size: cover;
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .card__details {
+    margin: 10px;
+    padding-left: 15px;
+  }
+}
+/* Media Queries */
+
+@media screen and (max-width: 481px) {
+  .card__item {
+    width: 100%;
+    height: 100%;
+    background-color: #18121a;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 5px;
+  }
+
+  .card__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 95%;
+    margin: 10px;
+    position: relative;
+  }
+
+  .card__image {
+    width: 100%;
+    background-image: url(./images/house.png);
+    background-size: cover;
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .card__details {
+    margin: 10px;
+    padding-left: 15px;
+  }
+
+  .card__details-title {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .card__item {
+    width: 90vw;
+    height: 100%;
+    background-color: #18121a;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 5px;
+  }
+
+  .card__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 95%;
+    margin: 10px;
+    position: relative;
+  }
+
+  .card__image {
+    width: 100%;
+    background-image: url(./images/house.png);
+    background-size: cover;
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .card__details {
+    margin: 10px;
+    padding-left: 15px;
+  }
+
+  .card__details-title {
+    font-size: 14px;
+  }
+}

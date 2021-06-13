@@ -1,0 +1,91 @@
+nav {
+  height: 64px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #211f21;
+  align-items: center;
+}
+.search-menu {
+  display: none;
+}
+nav .btn__login {
+  background-color: #93227f;
+  height: 49px;
+  width: 101px;
+  border-radius: 30px;
+  color: var(--text-white);
+  outline: none;
+  border: none;
+}
+
+nav .btn__signup {
+  background-color: transparent;
+  height: 49px;
+  width: 101px;
+  border-radius: 30px;
+  color: var(--text-white);
+  outline: none;
+  border: none;
+}
+
+@media screen and (max-width: 1024px) {
+  nav {
+    width: 100vw;
+    background-color: #211f21;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .search-menu {
+    display: flex;
+    margin: 0px 50px;
+  }
+  .search-menu p {
+    font-size: 16px;
+    color: var(--text-white);
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 360px) {
+  nav {
+    width: 100vw;
+    background-color: #211f21;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .search-menu {
+    display: flex;
+    margin: 10px;
+  }
+  .search-menu p {
+    font-size: 14px;
+    color: var(--text-white);
+    margin-left: 10px;
+  }
+
+  nav .btn__login {
+    background-color: #93227f;
+    height: 29px;
+    width: 81px;
+    border-radius: 30px;
+    color: var(--text-white);
+    outline: none;
+    border: none;
+  }
+
+  nav .btn__signup {
+    background-color: transparent;
+    height: 29px;
+    width: 81px;
+    border-radius: 30px;
+    color: var(--text-white);
+    outline: none;
+    border: none;
+  }
+
+  .nav-btns {
+    display: flex;
+  }
+}

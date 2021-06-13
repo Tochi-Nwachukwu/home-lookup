@@ -1,0 +1,184 @@
+.open-card-details__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#util--top {
+  top: 0;
+  margin: 0;
+  padding: 0;
+}
+.open-card-details__room-details {
+  position: relative;
+  border-bottom: 1px solid white;
+  width: 95%;
+}
+
+.util-flexbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#util--open-card {
+  margin: 0;
+  color: var(--text-white);
+}
+
+.open-card__map {
+  margin: 33px;
+  width: 858px;
+  height: 264px;
+  border: 15px;
+  background-image: url(../images/Frame\ 736.png);
+}
+
+.open-card__description {
+  color: white;
+  width: 95%;
+  margin: 20px;
+  padding-top: 10px;
+  padding-left: 15px;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1024px) {
+  .open-card-details__room-details {
+    position: relative;
+    border-bottom: 1px solid white;
+    width: 95%;
+  }
+
+  .util-flexbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #util--open-card {
+    margin: 0;
+    color: var(--text-white);
+  }
+
+  .open-card__map {
+    margin: 15px;
+    width: 95%;
+    border-radius: 15px;
+    background-image: url(../images/Frame\ 736.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .open-card__description {
+    color: white;
+    width: 95%;
+    margin: 10px;
+    padding-top: 10px;
+    padding-left: 15px;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 400;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .open-card-details__room-details {
+    position: relative;
+    border-bottom: 1px solid white;
+    width: 95%;
+    font-size: 16px;
+  }
+
+  .util-flexbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #util--open-card {
+    margin: 0;
+    color: var(--text-white);
+  }
+
+  .open-card__map {
+    margin: 5px;
+    width: 95%;
+    border-radius: 15px;
+    background-image: url(../images/Frame\ 736.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .open-card__description {
+    color: white;
+    width: 95%;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 400;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .open-card-details__room-details {
+    position: relative;
+    border-bottom: 1px solid white;
+    width: 95%;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .util-flexbox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #util--open-card {
+    margin: 0;
+    color: var(--text-white);
+  }
+  .class__details--location {
+    font-size: 12px;
+    margin: 0;
+  }
+
+  .card__details--movein-date {
+    font-size: 12px;
+  }
+  .open-card__map {
+    margin: 2%;
+    width: 90%;
+    border-radius: 6px;
+    background-image: url(../images/Frame\ 736.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .open-card__description {
+    color: white;
+    width: 90%;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    margin: 1%;
+  }
+
+  .open-card-details__room-details {
+    padding: 0;
+    margin: 0;
+  }
+
+  .card__details {
+    margin: 0;
+  }
+  card__details--movein-date {
+    margin: 0;
+  }
+}

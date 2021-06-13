@@ -1,0 +1,33 @@
+.button__wrapper {
+  width: 374px;
+  height: 79px;
+  padding: 5px;
+}
+
+.button__item {
+  width: 354px;
+  height: 59px;
+  background-color: #d41553;
+  border-radius: 10px;
+  color: #f9f3fa;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 360px) {
+  .button__wrapper {
+    width: 100%;
+    height: 79px;
+    padding: 5px;
+  }
+
+  .button__item {
+    width: 100%;
+    height: 50px;
+    background-color: #d41553;
+    border-radius: 10px;
+    color: #f9f3fa;
+    font-size: 16px;
+    outline: none;
+    border: none;
+  }
+}

@@ -1,0 +1,160 @@
+.card__carousel--container {
+  height: 516px;
+  width: 875px;
+  margin: 20px;
+}
+
+.card__carousel--cantainer-image {
+  height: 487px;
+  width: 859px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 15px;
+  position: relative;
+  transition: all 0.8s ease;
+}
+
+.carousel__main-img {
+  width: 100%;
+}
+
+.left-arrow {
+  position: absolute;
+  z-index: 10;
+  left: 30px;
+  top: 50%;
+  color: var(--text-pink);
+  width: 24px;
+  cursor: pointer;
+}
+.right-arrow {
+  position: absolute;
+  z-index: 10;
+  right: 30px;
+  top: 50%;
+  color: var(--text-pink);
+  cursor: pointer;
+}
+
+.fa-chevron {
+  width: 200px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+  .card__carousel--container {
+    width: 95%;
+    height: 30%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+  }
+
+  .card__carousel--cantainer-image {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 15px;
+    transition: all 0.8s ease;
+  }
+
+  .carousel__main-img {
+    width: 100%;
+    border-radius: 15px;
+  }
+
+  .left-arrow {
+    position: absolute;
+    z-index: 10;
+    left: 30px;
+    top: 50%;
+    color: var(--text-pink);
+    cursor: pointer;
+  }
+  .right-arrow {
+    position: absolute;
+    z-index: 10;
+    right: 30px;
+    top: 50%;
+    color: var(--text-pink);
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card__carousel--container {
+    width: 90%;
+    height: 30%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+  }
+  .carousel__main-img {
+    width: 95%;
+    border-radius: 15px;
+  }
+
+  .left-arrow {
+    position: absolute;
+    z-index: 10;
+    left: 3%;
+    top: 50%;
+    color: var(--text-pink);
+    cursor: pointer;
+  }
+  .right-arrow {
+    position: absolute;
+    z-index: 10;
+    right: 3%;
+    top: 50%;
+    color: var(--text-pink);
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .card__carousel--container {
+    width: 90%;
+    height: 30%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    position: relative;
+  }
+
+  .card__carousel--cantainer-image {
+    width: 90%;
+    height: 30%;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: all 0.8s ease;
+  }
+  .carousel__main-img {
+    width: 100%;
+    height: 30%;
+    border-radius: 15px;
+  }
+
+  .left-arrow {
+    position: absolute;
+    z-index: 10;
+    left: 3%;
+    top: 50%;
+    color: var(--text-pink);
+    cursor: pointer;
+  }
+  .right-arrow {
+    position: absolute;
+    z-index: 10;
+    right: 3%;
+    top: 50%;
+    color: var(--text-pink);
+    cursor: pointer;
+  }
+}
