@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import './Cards.css'
+import SearchArea from '../DropdownComponents/SearchArea'
 
 function Card() {
 
@@ -11,6 +12,7 @@ function Card() {
     const [items, setItems] = useState([]);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState();
+    
 
     const fetchItems = async () =>{
        const data = await  fetch("https://zillow-com1.p.rapidapi.com/propertyExtendedSearch?location=london&home_type=Houses", {
@@ -58,13 +60,13 @@ function Card() {
                     <h3 className="card__details-title">{item.address}</h3>
                     <h2 className="card__details-price">${item.price}</h2>
                     <div className="card__details-rooms">
-                        <span className="img-bed"></span> <span className="number">{item.bedrooms}</span> <span className="img-couch"></span> <span className="number">1 2</span>
+                        <span className="img-bed"></span> <span className="number">{item.bedrooms}</span> <span className="img-couch"></span> <span className="number">{item.bathrooms}</span>
                     </div>
 
                     <div className="card__details--location">
                         <div className="card__details--location-img"></div>
                         <p className="class__details--location">
-                        South Kensington (0.1 mile)
+                        {item.address}
                         </p>
 
                     </div>
@@ -82,6 +84,8 @@ function Card() {
         
         
     )
+
+    
 }
 
 export default Card

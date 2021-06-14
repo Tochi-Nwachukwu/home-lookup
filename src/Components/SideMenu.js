@@ -6,6 +6,7 @@ import SearchArea from './DropdownComponents/SearchArea'
 import './SideMenu.css'
 
 function SideMenu() {
+
     return (
         
         <div className = 'side-menu'>
