@@ -1,11 +1,53 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import './Cards.css'
 
 function Card() {
+
+    useEffect(()=>{
+        setLoading(true);
+        fetchItems();
+    }, []);
+
+    const [items, setItems] = useState([]);
+    const [loading, setLoading] = useState(false);
+    const [error, setError] = useState();
+
+    const fetchItems = async () =>{
+       const data = await  fetch("https://zillow-com1.p.rapidapi.com/propertyExtendedSearch?location=london&home_type=Houses", {
+        "method": "GET",
+        "headers": {
+            "x-rapidapi-key": "97e543dff9msh7ce70d656813218p1e2cacjsn9ff950d1353f",
+            "x-rapidapi-host": "zillow-com1.p.rapidapi.com"
+        }
+        }).catch((err) => {
+            console.log(err);
+          }).finally(() => {
+            setLoading(false);
+          });
+
+        const items = await data.json()
+        console.log(items.props);
+        setItems(items.props)
+    
+    }
+
+    if (loading) {
+        return <p>Data is loading...</p>;
+      }
+
+    if (error || !Array.isArray(items)) {
+        return <p>There was an error loading your data!</p>;
+      }
+
     return (
-        <div className = "card__item">
+        <div>
+            
+            {items.map(item =>(
+            <div className = "card__item">
             <div className="card__wrapper">
-                <div className="card__image">
+                <div className="card__image" style={{ 
+      backgroundImage: `url("${item.imgSrc}")` 
+    }}>
                     <div className="card__image--imagenav">
                         <div className="card__image--imagenav-icon">
                         </div>
@@ -13,10 +55,10 @@ function Card() {
                     </div>
                 </div>
                 <div className="card__details">
-                    <h3 className="card__details-title">3 Bedroom flat in Hackney Bridge</h3>
-                    <h2 className="card__details-price">£1,420 pcm</h2>
+                    <h3 className="card__details-title">{item.address}</h3>
+                    <h2 className="card__details-price">${item.price}</h2>
                     <div className="card__details-rooms">
-                        <span className="img-bed"></span> <span className="number">3</span> <span className="img-couch"></span> <span className="number">1 2</span>
+                        <span className="img-bed"></span> <span className="number">{item.bedrooms}</span> <span className="img-couch"></span> <span className="number">1 2</span>
                     </div>
 
                     <div className="card__details--location">
@@ -34,6 +76,11 @@ function Card() {
                 </div>
             </div>
         </div>
+
+        ))}
+        </div>
+        
+        
     )
 }
 

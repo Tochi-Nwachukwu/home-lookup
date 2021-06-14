@@ -5,7 +5,7 @@ import SideMenu from './Components/SideMenu';
 import OpenCard from './Components/SearchResults/Pages/OpenCard';
 import {BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import {Link }from 'react-router-dom';
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 
 function App() {
   return (
