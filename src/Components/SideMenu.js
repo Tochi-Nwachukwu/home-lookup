@@ -5,14 +5,14 @@ import minBedMinBedsMenu from './DropdownComponents/MinBedsMenu'
 import SearchArea from './DropdownComponents/SearchArea'
 import './SideMenu.css'
 
-function SideMenu() {
+function SideMenu({searchInput, searchBtn}) {
 
     return (
         
         <div className = 'side-menu'>
             <div className="side-menu__wrapper">
                 <h1 className="side-menu__header">Find a rental property</h1>
-                <SearchArea/>
+                {searchInput}
                 <div className="drop-downs">
                 <MinBedsMenu name = "Minimum beds" level = 'No min' />
                 <MinBedsMenu  name = "Maximum beds" level = 'No max'/>
@@ -24,7 +24,7 @@ function SideMenu() {
                 <MinBedsMenu  name = "Maximum price" level = 'No max'/>
                 </div>
 
-                <Button title = "FIND PROPERTIES"/>
+                {searchBtn}
 
             </div>
            
