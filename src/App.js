@@ -70,7 +70,7 @@ if (error || !Array.isArray(items)) {
           <Route path = "/" exact >
             <SearchResContainer>
             <Link to = '/opencard'>
-                {items.map(item => <Card item={item} />)}
+                {items.map(item => <Card item={item} key={Math.random() * (1000000000 + 999999999999) - 1000000000} />)}
             </Link>
             </SearchResContainer>
           </Route>

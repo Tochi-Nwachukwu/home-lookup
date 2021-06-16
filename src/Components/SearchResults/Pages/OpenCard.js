@@ -3,12 +3,16 @@ import CardCarousel from './CardCarousel'
 import './OpenCard.css'
 import {CarouselData} from './CarouselData'
 import OpenCardDetails from './OpenCardDetails'
+import { useLocation } from 'react-router-dom';
 
 function OpenCard() {
+  const location = useLocation()
+  const item = location.state;
+  console.log(location.state);
     return (
         <div className = 'open_card__container'>
-          <CardCarousel slides = {CarouselData}/> 
-          <OpenCardDetails/> 
+          <CardCarousel slide={item.imgSrc}/> 
+          <OpenCardDetails item={item} /> 
         </div>
     )
 }

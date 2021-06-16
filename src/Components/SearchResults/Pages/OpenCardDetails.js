@@ -2,17 +2,17 @@ import React from 'react';
 import '../Cards.css';
 import './OpenCardDetails.css'
 
-function OpenCardDetails() {
+function OpenCardDetails({item}) {
     return (
         <div className='open-card-details__container'>
             <div className="open-card-details__room-details">
             <div className="card__details">
-                    <h3 className="card__details-title">3 Bedroom flat in Hackney Bridge</h3>
-                    <h2 className="card__details-price">£1,420 pcm</h2>
+                    <h3 className="card__details-title">{item.address}</h3>
+                    <h2 className="card__details-price">{item.currency} {item.price} pcm</h2>
 
                     <div className="util-flexbox">
                         <div className="card__details-rooms">
-                            <span className="img-bed"></span> <span className="number">3</span> <span className="img-couch"></span> <span className="number">1 2</span>
+                            <span className="img-bed"></span> <span className="number">{item.bedrooms}</span> <span className="img-couch"></span> <span className="number"> {item.bathrooms}</span>
                         </div>
 
                         <div className="card__details--location">

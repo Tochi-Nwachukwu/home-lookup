@@ -8,7 +8,10 @@ import {Link} from 'react-router-dom';
 function Card({item}) {
     const { input } = useContext(MyContext);
     return (
-        <Link to="/opencard">
+        <Link to={{
+            pathname: "/opencard",
+            state: item,
+        }}>
             <div className = "card__item">
                 <div className="card__wrapper">
                     <div className="card__image" style={{backgroundImage: `url("${item.imgSrc}")`}}>
