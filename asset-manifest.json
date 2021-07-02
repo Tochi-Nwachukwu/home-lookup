@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/home-lookup/static/css/main.761076f9.chunk.css",
+    "main.js": "/home-lookup/static/js/main.abeb13ed.chunk.js",
+    "main.js.map": "/home-lookup/static/js/main.abeb13ed.chunk.js.map",
+    "runtime-main.js": "/home-lookup/static/js/runtime-main.592ac0fe.js",
+    "runtime-main.js.map": "/home-lookup/static/js/runtime-main.592ac0fe.js.map",
+    "static/js/2.5c0b4336.chunk.js": "/home-lookup/static/js/2.5c0b4336.chunk.js",
+    "static/js/2.5c0b4336.chunk.js.map": "/home-lookup/static/js/2.5c0b4336.chunk.js.map",
+    "static/js/3.4c62772c.chunk.js": "/home-lookup/static/js/3.4c62772c.chunk.js",
+    "static/js/3.4c62772c.chunk.js.map": "/home-lookup/static/js/3.4c62772c.chunk.js.map",
+    "index.html": "/home-lookup/index.html",
+    "static/css/main.761076f9.chunk.css.map": "/home-lookup/static/css/main.761076f9.chunk.css.map",
+    "static/js/2.5c0b4336.chunk.js.LICENSE.txt": "/home-lookup/static/js/2.5c0b4336.chunk.js.LICENSE.txt",
+    "static/media/OpenCardDetails.css": "/home-lookup/static/media/Frame 736.c0bf3527.png",
+    "static/media/Cards.css": "/home-lookup/static/media/house.1199dd69.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.592ac0fe.js",
+    "static/js/2.5c0b4336.chunk.js",
+    "static/css/main.761076f9.chunk.css",
+    "static/js/main.abeb13ed.chunk.js"
+  ]
+}
