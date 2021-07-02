@@ -1,7 +1,6 @@
 import React from 'react'
 import CardCarousel from './CardCarousel'
 import './OpenCard.css'
-import {CarouselData} from './CarouselData'
 import OpenCardDetails from './OpenCardDetails'
 import { useLocation } from 'react-router-dom';
 

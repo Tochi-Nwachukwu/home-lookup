@@ -34,6 +34,7 @@ function OpenCardDetails({item}) {
             </div> 
 
             <div className="open-card__map">
+                
             </div>
 
             <div className="open-card__description">
